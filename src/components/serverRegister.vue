@@ -167,9 +167,11 @@ export default {
       if(_self.form.name == "" || _self.form.mobile == "" || _self.form.code == "" ||_self.form.password == "" ||_self.form.checkPassword == ""){
         this.error.msg = "信息填写不完整";
         this.error.styleObject.display ='block';
-      }else if(){
-
-      }else {
+      }
+//      else if(){
+//
+//      }
+      else {
         $.ajax({
           type:'post',
           url:jQuery.url+'/org/register',
